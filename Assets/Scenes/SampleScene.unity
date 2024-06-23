@@ -11952,9 +11952,21 @@ PrefabInstance:
       propertyPath: m_Center.z
       value: 0.5000001
       objectReference: {fileID: 0}
+    - target: {fileID: 1574169436264152079, guid: 2551ef1116276754fba2fb7ebf892716, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 8e92ba4c819353d4c9ab8d080c209134, type: 2}
     - target: {fileID: 1715770158992914669, guid: 2551ef1116276754fba2fb7ebf892716, type: 3}
       propertyPath: m_Name
       value: Edge
+      objectReference: {fileID: 0}
+    - target: {fileID: 2100549622846083352, guid: 2551ef1116276754fba2fb7ebf892716, type: 3}
+      propertyPath: m_Drag
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2100549622846083352, guid: 2551ef1116276754fba2fb7ebf892716, type: 3}
+      propertyPath: m_Mass
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2100549622846083352, guid: 2551ef1116276754fba2fb7ebf892716, type: 3}
       propertyPath: m_CollisionDetection
@@ -11969,13 +11981,33 @@ PrefabInstance:
       value: -3.37
       objectReference: {fileID: 0}
     - target: {fileID: 2612534344996260971, guid: 2551ef1116276754fba2fb7ebf892716, type: 3}
+      propertyPath: m_Size.x
+      value: 0.38785648
+      objectReference: {fileID: 0}
+    - target: {fileID: 2612534344996260971, guid: 2551ef1116276754fba2fb7ebf892716, type: 3}
+      propertyPath: m_Size.y
+      value: 5.2807612
+      objectReference: {fileID: 0}
+    - target: {fileID: 2612534344996260971, guid: 2551ef1116276754fba2fb7ebf892716, type: 3}
       propertyPath: m_Size.z
-      value: 0
+      value: 1.5800136
+      objectReference: {fileID: 0}
+    - target: {fileID: 2612534344996260971, guid: 2551ef1116276754fba2fb7ebf892716, type: 3}
+      propertyPath: m_Center.x
+      value: -0.5436835
+      objectReference: {fileID: 0}
+    - target: {fileID: 2612534344996260971, guid: 2551ef1116276754fba2fb7ebf892716, type: 3}
+      propertyPath: m_Center.y
+      value: 0.03499031
       objectReference: {fileID: 0}
     - target: {fileID: 2612534344996260971, guid: 2551ef1116276754fba2fb7ebf892716, type: 3}
       propertyPath: m_Center.z
-      value: 0.5000001
+      value: 0.73966444
       objectReference: {fileID: 0}
+    - target: {fileID: 2612534344996260971, guid: 2551ef1116276754fba2fb7ebf892716, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 8e92ba4c819353d4c9ab8d080c209134, type: 2}
     - target: {fileID: 3399988735152769441, guid: 2551ef1116276754fba2fb7ebf892716, type: 3}
       propertyPath: m_Constraints
       value: 14
@@ -12093,13 +12125,25 @@ PrefabInstance:
       value: -3.4480004
       objectReference: {fileID: 0}
     - target: {fileID: 8293983603641103709, guid: 2551ef1116276754fba2fb7ebf892716, type: 3}
+      propertyPath: m_Size.x
+      value: 0.22513914
+      objectReference: {fileID: 0}
+    - target: {fileID: 8293983603641103709, guid: 2551ef1116276754fba2fb7ebf892716, type: 3}
       propertyPath: m_Size.z
-      value: 0
+      value: 1.5983275
+      objectReference: {fileID: 0}
+    - target: {fileID: 8293983603641103709, guid: 2551ef1116276754fba2fb7ebf892716, type: 3}
+      propertyPath: m_Center.x
+      value: 2.715779
       objectReference: {fileID: 0}
     - target: {fileID: 8293983603641103709, guid: 2551ef1116276754fba2fb7ebf892716, type: 3}
       propertyPath: m_Center.z
-      value: 1.5296714
+      value: 0.7305075
       objectReference: {fileID: 0}
+    - target: {fileID: 8293983603641103709, guid: 2551ef1116276754fba2fb7ebf892716, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 8e92ba4c819353d4c9ab8d080c209134, type: 2}
     - target: {fileID: 8608007152954587023, guid: 2551ef1116276754fba2fb7ebf892716, type: 3}
       propertyPath: Flags
       value: 524289
@@ -12125,9 +12169,6 @@ PrefabInstance:
       value: Table top
       objectReference: {fileID: 0}
     m_RemovedComponents:
-    - {fileID: 8293983603641103709, guid: 2551ef1116276754fba2fb7ebf892716, type: 3}
-    - {fileID: 2612534344996260971, guid: 2551ef1116276754fba2fb7ebf892716, type: 3}
-    - {fileID: 1574169436264152079, guid: 2551ef1116276754fba2fb7ebf892716, type: 3}
     - {fileID: 955760763140395384, guid: 2551ef1116276754fba2fb7ebf892716, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

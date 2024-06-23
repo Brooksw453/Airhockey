@@ -10,15 +10,17 @@ public class ObjectResetter : MonoBehaviour
     public List<GameObject> objectsToReset = new List<GameObject>();
 
     private Dictionary<GameObject, Vector3> originalPositions = new Dictionary<GameObject, Vector3>();
+    private Dictionary<GameObject, Quaternion> originalRotations = new Dictionary<GameObject, Quaternion>();
 
     void Start()
     {
-        // Store the original positions of the objects
+        // Store the original positions and rotations of the objects
         foreach (GameObject obj in objectsToReset)
         {
             if (obj != null)
             {
                 originalPositions[obj] = obj.transform.position;
+                originalRotations[obj] = obj.transform.rotation;
             }
         }
     }
@@ -30,22 +32,26 @@ public class ObjectResetter : MonoBehaviour
         {
             if (obj != null && obj.transform.position.y < resetPlaneY)
             {
-                ResetObjectPosition(obj);
+                ResetObjectPositionAndRotation(obj);
             }
         }
     }
 
-    void ResetObjectPosition(GameObject obj)
+    void ResetObjectPositionAndRotation(GameObject obj)
     {
-        if (originalPositions.ContainsKey(obj))
+        if (originalPositions.ContainsKey(obj) && originalRotations.ContainsKey(obj))
         {
             obj.transform.position = originalPositions[obj];
+            obj.transform.rotation = originalRotations[obj];
             Rigidbody rb = obj.GetComponent<Rigidbody>();
             if (rb != null)
             {
                 rb.velocity = Vector3.zero;
                 rb.angularVelocity = Vector3.zero;
             }
+
+            // Optional: Log the reset action
+            Debug.Log($"{obj.name} has been reset to its original position and rotation.");
         }
     }
 
@@ -56,6 +62,7 @@ public class ObjectResetter : MonoBehaviour
         {
             objectsToReset.Add(obj);
             originalPositions[obj] = obj.transform.position;
+            originalRotations[obj] = obj.transform.rotation;
         }
     }
 }
